@@ -78,6 +78,9 @@ nav {
 ul {
   margin: 0;
 }
+li {
+  padding: 4px 20px;
+}
 
 .nav-links li {
   margin-left: 20px;
