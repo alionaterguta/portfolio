@@ -78,9 +78,6 @@ nav {
 ul {
   margin: 0;
 }
-li {
-  padding: 4px 20px;
-}
 
 .nav-links li {
   margin-left: 20px;
@@ -342,7 +339,10 @@ section {
 
 /* Project section */
 #projects {
-  padding: 60px 20px;
+  padding: 60px 80px;
+}
+li {
+  padding: 4px 20px;
 }
 .project_text {
   font-size: 40px;
@@ -361,8 +361,8 @@ section {
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -521,7 +521,17 @@ footer .social-media {
   width: 24px;
   height: 24px;
 }
-
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-gap: 20px;
+    margin: 40px auto;
+  }
+}
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -602,12 +612,5 @@ footer .social-media {
 
   .grid_item h2 {
     text-align: start;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024) {
-  .grid {
-    -ms-grid-columns: 1fr 15px 1fr;
-    grid-template-columns: 1fr 1fr;
   }
 }
