@@ -440,11 +440,9 @@ li {
 form {
   margin-top: 20px;
 }
-input[type="text"],
+
 input[type="email"],
-input[type="tel"],
-#contact-message,
-select {
+#contact-message {
   color: white;
   width: 100%;
   padding: 8px 16px;
@@ -452,9 +450,22 @@ select {
   display: inline-block;
   border: 1px solid white;
   border-radius: 4px;
-  background-color: var(--bg-fab);
+  box-sizing: border-box;
+  background-color: rgb(243, 253, 255, 0.5);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+input[type="email"]:focus,
+#contact-message:focus {
+  /* background-color: transparent; */
+  outline: none;
+  border-color: #40e0d0; /* Optional: Change border color on focus for better visibility */
+}
+
+input[type="email"]:active,
+#contact-message:active {
+  background-color: transparent;
 }
 .submit {
   background-color: #40e0d0;
