@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
   --scale: 1.02;
 }
@@ -10,6 +17,7 @@
 }
 body {
   font-family: Roboto, sans-serif;
+  background: -o-linear-gradient(left, #40e0d0, #ee82ee);
   background: -webkit-gradient(
     linear,
     left top,
@@ -17,7 +25,6 @@ body {
     from(#40e0d0),
     to(#ee82ee)
   );
-  background: -o-linear-gradient(left, #40e0d0, #ee82ee);
   background: linear-gradient(to right, #40e0d0, #ee82ee);
   color: #fff;
 }
@@ -160,6 +167,9 @@ ul {
 .profile_photo {
   width: 432px;
   height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .position_profile {
@@ -401,6 +411,41 @@ li {
     background: #40e0d0;
     color: #fff;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  button:hover {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(1, 69, 84, 0.4);
+    color: white;
+    scale: var(--scale);
+  }
+  .cv-button {
+    margin: 15px;
+    width: 150px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+
+    justify-content: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .cv-button a {
+    text-decoration: none;
+    color: white;
+  }
+  .cv-button:hover {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(1, 69, 84, 0.4);
+    color: white;
+    scale: var(--scale);
   }
   .link_mywork {
     color: 2c2c2c;
@@ -460,7 +505,7 @@ input[type="email"]:focus,
 #contact-message:focus {
   background-color: transparent;
   outline: none;
-  border-color: #40e0d0; /* Optional: Change border color on focus for better visibility */
+  border-color: #40e0d0;
 }
 
 input[type="email"]:active,
