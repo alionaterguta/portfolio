@@ -5,392 +5,453 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link
-    rel="shortcut icon"
-    href="./img/favicon-64x64.svg"
-    type="image/x-icon"
-  />
+      rel="shortcut icon"
+      href="./img/favicon-64x64.svg"
+      type="image/x-icon"
+    />
     <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-  />
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/index.production.css" />    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.production.css" />
   </head>
 
   <body>
     <header>
-      <div class="logo">Aliona Terguta</div>
+      <div class="logo"><a href="#hero">Aliona Terguta</a></div>
       <nav>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
         <div class="hamburger">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
-        </div>    
+        </div>
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero_profile">
-        <img src="img/profile-photo-unsplash.png" class="profile_photo" alt="Hero Image" />
-        <div class="position_profile">
-          <h1>Junior Frontend Developer</h1>
-          <p class="hero_text">
-            I enjoy creating digital products that are both practical and
-            visually pleasing. </p>
-            <div class="social-media">
-              <a href="https://github.com/alionaterguta" target="_blank">
-                <img
-                  src="./img/github-hub-icon.svg"
-                  width="30px"
-                  alt="GitHub Icon"
-                />
-              </a>
-              <a href="https://www.linkedin.com/in/aterguta/" target="_blank">
-                <img
-                  src="./img/linkedin-icon-2.svg"
-                  width="30px"
-                  alt="Linkedin Icon"
-                />
-              </a>
-            </div>
-          
+    <section id="hero" class="hero">
+      <div class="intro">
+        <h1>Front-end Developer and an enthusiast UI Designer</h1>
+        <div>
+          <button class="intro-button button">
+            <a href="#projects">Projects </a>
+          </button>
         </div>
       </div>
     </section>
 
     <section id="about">
-      <h2>About</h2>
-      <p class="project_text">Web Development Journey</p>
-      <div class="about_text">
-
-      <p>Back in 2020, I decided to try customizing a WordPress theme for the website of the NGO I was volunteering at. It was a challenge, despite it not being my first attempt at customizing digital products. Mistakes were made, of course, but working on the website sparked an interest to know more.</p>
-      <p> Since developing this passion, I found myself easing into this new path. I started by delving deeper into User Experience and Interface Design and eventually completed an intensive Full Stack Web Development program. I have worked on several projects using various technologies and tools, starting with HTML, CSS, and JavaScript, and progressing to developing web apps in React and Angular. Check below my education and experiences in this field thus far.
-      </p>     
-      <p>
-        Currently, I am mostly focusing on improving my portfolio website. Additionally, I am developing a web app with React to consolidate my knowledge, and I am continuing to work on the WordPress website for Perspektiven für Kinder im Gallus, where I volunteer. 
-      </p>      
-      <p >
-        Besides web development, I love planning the next town escape with my family, diving into a good book, crafting with kids, or watercolor painting.
-      </p>
-
-     </div>
-
-    <div class="about_content second">
-      <div class="about_child1">
-        <!-- Container 1-->
-        <p class="course_name">
-          Full-Stack Web Development Program:
-          <span>Full-Stack Immersion</span>
+      <h2 class="section-name" id="about-heading">About Me</h2>
+      <div class="portrait_container">
+        <img
+          src="img/aliona-terguta-portrait-350px.png"
+          alt="Portrait Aliona Terguta"
+        />
+      </div>
+      <p class="project-text">A Web Development Journey</p>
+      <div class="about-text">
+        <p>
+          Hey! I am Aliona and I enjoy creating digital products that are both
+          practical and visually pleasing.
         </p>
-        <p class="school_name">CareerFoundry</p>
-        <p class="years">Dec. 2023 - May 2024</p>
-      </div>
-      <div class="about_child1">
-        <!-- Container 2-->
-        <div class="about_child1--container">
-          <button class="button_secondary">JavaScript</button>
-          <button class="button_secondary">React</button>
-          <button class="button_secondary">React Native</button>
-          <button class="button_secondary">Angular</button>
-          <button class="button_secondary">Node.js</button>
-          <button class="button_secondary">Express.js</button>
-          <button class="button_secondary">jQuery</button>
-          <button class="button_secondary">MongoDB</button>
-          <button class="button_secondary">Mongoose</button>
-        </div>
-        <div class="about_child1--container">
-          <button class="button_secondary">AWS Lambda</button>
-          <button class="button_secondary">Google Firebase</button>
-          <button class="button_secondary">Expo</button>
-          <button class="button_secondary">Postman</button>
-          <button class="button_secondary">Trello</button>
-          <button class="button_secondary">Repl.it</button>
-          <button class="button_secondary">Gifted Chat</button>
-          <button class="button_secondary">React-Bootstrap</button>
-          <button class="button_secondary">Angular Material</button>
-        </div>
-      </div>
-      <div class="about_child1">
-        <!-- Container 1-->
-        <p class="course_name">
-          Full-Stack Web Development Program:
-          <span>Intro to Frontend development</span>
+        <p>
+          Back in 2020, I decided to try customizing a WordPress theme for the
+          website of the NGO I am volunteering at. It was a challenge, despite
+          it not being my first attempt at customizing digital products.
+          Mistakes were made, of course, but working on the website sparked an
+          interest to know more.
         </p>
-        <p class="school_name">CareerFoundry</p>
-        <p class="years">Nov. 2023 - Dec. 2023</p>
-      </div>
-      <div class="about_child1">
-        <!-- Container 2-->
-        <div class="about_child1--container">
-          <button class="button_secondary">HTML</button>
-          <button class="button_secondary">CSS</button>
-          <button class="button_secondary">SCSS</button>
-        </div>
-        <div class="about_child1--container">
-          <button class="button_secondary">GitHub</button>
-          <button class="button_secondary">CodePen</button>
-          <button class="button_secondary">Jira Software</button>
-          <button class="button_secondary">recraft.ai</button>
-        </div>
-      </div>
-      <div class="about_child1">
-        <!-- Container 3-->
-        <p class="course_name">
-          Mia san Online Program: <span>UX/UI Design</span> 
-          <a class="pdf-link" href="docs/Certificate_of_Participation_MiaSanOnline.pdf" target="_blank">
-    
-            <svg class="up-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(45deg);">
-              <path d="M12 6V18M5 13l7-7 7 7"/>
-            </svg>
-        </a>
+        <p>
+          Since developing this passion, I found myself easing into this new
+          path. I started by delving deeper into User Experience and Interface
+          Design and eventually completed an intensive Full Stack Web
+          Development program. I have worked on several projects using various
+          technologies and tools, starting with HTML, CSS, and JavaScript, and
+          progressing to developing web apps in React and Angular. Check below
+          my education and experiences in this field thus far.
         </p>
-        <p class="school_name">ReDI LAB Projects</p>
-        <p class="years">Sep. 2023 - Nov. 2023</p>
+        <button class="cv-button intro-button">
+          <a href="docs/Aliona_Terguta_Resume.pdf" target="_blank"
+            >Check my Resume <i class="fas fa-arrow-up-right-from-square"></i
+          ></a>
+        </button>
+        <p>
+          Currently, I am mostly focusing on improving my portfolio website.
+          Additionally, I am developing a web app with React to consolidate my
+          knowledge, and I am continuing to work on the WordPress website for
+          Perspektiven für Kinder im Gallus, where I volunteer.
+        </p>
       </div>
-      <div class="about_child1">
-        <!-- Container 4-->
-        <div class="about_child1--container">
-          <button class="button_secondary">Figma</button>
-          <button class="button_secondary">Framer</button>
+
+      <div class="about-content second">
+        <div class="about-child1">
+          <!-- Container 1-->
+          <p class="course-name">
+            Full-Stack Web Development Program:
+            <span>Full-Stack Immersion</span>
+          </p>
+          <p class="school-name">CareerFoundry</p>
+          <p class="years">Dec. 2023 - May 2024</p>
         </div>
-        <div class="about_child1--container">
-          <button class="button_secondary">Jira Software</button>
-          <button class="button_secondary">Miro</button>
+        <div class="about-child1">
+          <!-- Container 2-->
+          <div class="about-child1--container">
+            <button class="button-secondary">JavaScript</button>
+            <button class="button-secondary">React</button>
+            <button class="button-secondary">React Native</button>
+            <button class="button-secondary">Angular</button>
+            <button class="button-secondary">Node.js</button>
+            <button class="button-secondary">Express.js</button>
+            <button class="button-secondary">jQuery</button>
+            <button class="button-secondary">MongoDB</button>
+            <button class="button-secondary">Mongoose</button>
+          </div>
+          <div class="about-child1--container">
+            <button class="button-secondary">AWS Lambda</button>
+            <button class="button-secondary">Google Firebase</button>
+            <button class="button-secondary">Expo</button>
+            <button class="button-secondary">Postman</button>
+            <button class="button-secondary">Trello</button>
+            <button class="button-secondary">Repl.it</button>
+            <button class="button-secondary">Gifted Chat</button>
+            <button class="button-secondary">React-Bootstrap</button>
+            <button class="button-secondary">Angular Material</button>
+          </div>
+        </div>
+        <div class="about-child1">
+          <!-- Container 1-->
+          <p class="course-name">
+            Full-Stack Web Development Program:
+            <span>Intro to Frontend Development</span>
+          </p>
+          <p class="school-name">CareerFoundry</p>
+          <p class="years">Nov. 2023 - Dec. 2023</p>
+        </div>
+        <div class="about-child1">
+          <!-- Container 2-->
+          <div class="about-child1--container">
+            <button class="button-secondary">HTML</button>
+            <button class="button-secondary">CSS</button>
+            <button class="button-secondary">SCSS</button>
+          </div>
+          <div class="about-child1--container">
+            <button class="button-secondary">GitHub</button>
+            <button class="button-secondary">CodePen</button>
+            <button class="button-secondary">Jira Software</button>
+            <button class="button-secondary">recraft.ai</button>
+          </div>
+        </div>
+        <div class="about-child1">
+          <!-- Container 3-->
+          <p class="course-name">
+            Mia san Online Program: <span>UX/UI Designer</span>
+            <a
+              class="pdf-link"
+              href="docs/Certificate_of_Participation_MiaSanOnline.pdf"
+              target="_blank"
+              ><i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </p>
+          <p class="school-name">ReDI LAB Projects</p>
+          <p class="years">Sep. 2023 - Nov. 2023</p>
+        </div>
+        <div class="about-child1">
+          <!-- Container 4-->
+          <div class="about-child1--container">
+            <button class="button-secondary">Figma</button>
+            <button class="button-secondary">Framer</button>
+          </div>
+          <div class="about-child1--container">
+            <button class="button-secondary">Jira Software</button>
+            <button class="button-secondary">Miro</button>
+          </div>
+        </div>
+        <div class="about-child1">
+          <!-- Container 5-->
+          <p class="course-name">
+            UX/UI Design Course
+            <a class="pdf-link" onclick="openPDFs()">
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </p>
+          <p class="school-name">ReDI School of Digital Integration</p>
+          <p class="years">Sep. 2022 - Jun. 2023 (2 Semesters)</p>
+        </div>
+        <div class="about-child1">
+          <!-- Container 6-->
+          <div class="about-child1--container">
+            <button class="button-secondary">Figma</button>
+            <button class="button-secondary">FigJam</button>
+            <button class="button-secondary">Google Forms</button>
+            <button class="button-secondary">Typeform</button>
+          </div>
+          <div class="about-child1--container">
+            <button class="button-secondary">UX Research</button>
+            <button class="button-secondary">User Journey</button>
+            <button class="button-secondary">User Flow</button>
+            <button class="button-secondary">Wireframing</button>
+            <button class="button-secondary">Prototyping</button>
+            <button class="button-secondary">Usability Testing</button>
+          </div>
         </div>
       </div>
-      <div class="about_child1">
-        <!-- Container 5-->
-        <p class="course_name">UX/UI Design Course   
-          <a class="pdf-link" onclick="openPDFs()">
-    
-            <svg class="up-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(45deg);">
-              <path d="M12 6V18M5 13l7-7 7 7"/>
-            </svg>
-        </a></p>
-        <p class="school_name">ReDI School of Digital Integration</p>
-        <p class="years">Sep. 2022 - Jun. 2023 (2 Semesters)</p>
-      </div>
-      <div class="about_child1">
-        <!-- Container 6-->
-        <div class="about_child1--container">
-          <button class="button_secondary">Figma</button>
-          <button class="button_secondary">FigJam</button>
-          <button class="button_secondary">Google Forms</button>
-          <button class="button_secondary">Typeform</button>
-        </div>
-        <div class="about_child1--container">
-          <button class="button_secondary">UX Research</button>
-          <button class="button_secondary">User Journey</button>
-          <button class="button_secondary">User Flow</button>
-          <button class="button_secondary">Wireframing</button>
-          <button class="button_secondary">Prototyping</button>
-          <button class="button_secondary">Usability Testing</button>
-        </div>
-      </div>
-    </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <p class="project_text">Explore some of the projects I have built</p>
+      <h2 class="section-name">Projects</h2>
+      <p class="project-text">Explore some of the projects I have built</p>
       <div class="grid">
-        <div class="grid_item">
+        <div class="grid-item">
           <!--container 2-->
-          <div class="img_container">
-            <div class="project_img">
+          <div class="img-container">
+            <div class="project-img">
               <a href="img/cine-verse-img1.png" target="_blank">
-                <img
-                  src="img/cine-verse-img1.png"
-                  width="160"
-                  height="90"
+                <img src="img/cine-verse-img1.png" width="360" height="auto"
               /></a>
             </div>
           </div>
-          <h2>Cine-Verse App with React</h2>
+          <h2>
+            <a href="case-study.html"
+              >Cine-Verse App with React - Case Study
+              <i class="fas fa-arrow-up-right-from-square"></i
+            ></a>
+          </h2>
+          <p class="project-timeframe">
+            <i class="fas fa-calendar-day"></i> Feb. - Mar. 2024
+          </p>
           <p>
             Cine-Verse is a dynamic web application designed for movie
             enthusiasts, providing a comprehensive platform to explore
             information about different movies, directors, and genres.
           </p>
-          <p>As the sole developer of the Cine-verse app, my primary responsibility was to architect, develop, and style the entire application from scratch, utilizing React for its frontend and enhancing its aesthetics with React-Bootstrap. </p>
-           
-          <div>
-            <button onclick="window.location.href='https://cine-verse-app.netlify.app/login'">
-              View Website
-            </button>
-            <button onclick="window.location.href='https://github.com/alionaterguta/cine-verse-client.git'">
-              View Code
-            </button>
-          </div>              
+
+          <div class="project-button--container">
+            <a
+              class="button-projects"
+              href="https://cine-verse-app.netlify.app/login"
+              target="_blank"
+            >
+              View Website <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+            <a
+              class="button-projects"
+              href="https://github.com/alionaterguta/cine-verse-client.git"
+              target="_blank"
+            >
+              View Code <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="grid_item">
+        <div class="grid-item">
           <!--container 1-->
-          <div class="img_container">
-            <div class="project_img">
+          <div class="img-container">
+            <div class="project-img">
               <a href="img/meet-img1.png" target="_blank">
-                <img src="img/meet-img1.png" width="160" height="90"
+                <img src="img/meet-img1.png" width="360" height="auto"
               /></a>
             </div>
           </div>
           <h2>Meet App: A Progressive Web Application (PWA)</h2>
+          <p class="project-timeframe">
+            <i class="fas fa-calendar-day"></i> Mar. - Apr. 2024
+          </p>
           <p>
             Meet App is a progressive web application developed with a
-            Test-Driven Development (TDD) approach, where tests are
-            written before implementing the actual functionality in the
-            code.
+            Test-Driven Development (TDD) approach, where tests are written
+            before implementing the actual functionality in the code.
           </p>
-          <div>
-            <button onclick="window.location.href='https://alionaterguta.github.io/meet/'">
-              View Website
-            </button>
-            <button onclick="window.location.href='https://github.com/alionaterguta/meet.git'">
-              View Code
-            </button>
-          </div>              
+          <div class="project-button--container">
+            <a
+              class="button-projects"
+              href="https://alionaterguta.github.io/meet/"
+              target="_blank"
+            >
+              View Website <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+            <a
+              class="button-projects"
+              href="https://github.com/alionaterguta/meet.git"
+              target="_blank"
+            >
+              View Code <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
-        <div class="grid_item">
+        <div class="grid-item">
           <!--container 3-->
 
-          <div class="img_container">
-            <div class="project_img">
+          <div class="img-container">
+            <div class="project-img">
               <a href="img/chat-app-img1.png" target="_blank">
-                <img src="img/chat-app-img1.png" width="90" height="150"
+                <img src="img/chat-app-img1.png" width="120" height="200"
               /></a>
             </div>
-            <div class="project_img">
+            <div class="project-img">
               <a href="img/chat-app-img2.png" target="_blank">
-                <img src="img/chat-app-img2.png" width="90" height="150"
+                <img src="img/chat-app-img2.png" width="120" height="200"
               /></a>
             </div>
-            <div class="project_img">
+            <div class="project-img">
               <a href="img/chat-app-img3.png" target="_blank">
-                <img src="img/chat-app-img3.png" width="90" height="150"
+                <img src="img/chat-app-img3.png" width="120" height="200"
               /></a>
             </div>
           </div>
           <h2>Chat App: A React Native Application</h2>
+          <p class="project-timeframe">
+            <i class="fas fa-calendar-day"></i> Apr. 2024
+          </p>
           <p>
             Chat App is a React Native application designed to facilitate
             real-time communication between users.
-            <ul><li>Developed using React Native and Expo.</li>
-            <li>
-              Chat conversations are stored in the Google Firestore
-              Database.
-            </li>
-            <li>
-              The chat interface and functionality are implemented using
-              the Gifted Chat library.
-            </li></ul>
           </p>
-          <div>
-            <button onclick="window.location.href='https://github.com/alionaterguta/chat-app.git'">
-              View Code
-            </button>
-          </div>              
+          <p>
+            It was developed using React Native and Expo platform, the chat
+            interface and functionality are implemented using the Gifted Chat
+            library. Google Firestore Database is used to store chat
+            conversations.
+          </p>
+
+          <div class="project-button--container">
+            <a
+              class="button-projects"
+              href="https://github.com/alionaterguta/chat-app.git"
+              target="_blank"
+            >
+              View Code <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
-        <div class="grid_item">
+        <div class="grid-item">
           <!--container 4-->
 
-          <div class="img_container">
-            <div class="project_img">
+          <div class="img-container">
+            <div class="project-img">
               <a href="img/cineverse-img1.png" target="_blank">
-                <img src="img/cineverse-img1.png" width="160" height="90"
+                <img src="img/cineverse-img1.png" width="360" height="auto"
               /></a>
             </div>
           </div>
           <h2>CineVerse App with Angular</h2>
-          <p>
-            In this project, I led the development of the frontend
-            interface using Angular and Angular Material for UI.
+          <p class="project-timeframe">
+            <i class="fas fa-calendar-day"></i> Apr. - May. 2024
           </p>
           <p>
-            The goal was to create a seamless and engaging user experience
-            to complement the robust backend infrastructure, which
-            included a REST API and a database.
+            In this project, I led the development of the frontend interface
+            using Angular and Angular Material for UI.
           </p>
-          <div>
-            <button onclick="window.location.href='https://alionaterguta.github.io/CineVerse-Angular-app/'">
-              View Website
-            </button>
-            <button onclick="window.location.href='https://github.com/alionaterguta/CineVerse-Angular-app.git'">
-              View Code
-            </button>
-          </div>              
-        </div>
-
-        <div class="grid_item">
-          <!--container 5-->
-         
-          <div class="img_container">
-            <div class="project_img">
-              <a href="img/pokedex-img1.png" target="_blank">
-              <img src="img/pokedex-img1.png" width="160" height="90" ></a></div>
+          <p>
+            The goal was to create a seamless and engaging user experience to
+            complement the robust backend infrastructure, which included a REST
+            API and a database.
+          </p>
+          <div class="project-button--container">
+            <a
+              class="button-projects"
+              href="https://alionaterguta.github.io/CineVerse-Angular-app/"
+              target="_blank"
+            >
+              View Website <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+            <a
+              class="button-projects"
+              href="https://github.com/alionaterguta/CineVerse-Angular-app.git"
+              target="_blank"
+            >
+              View Code <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
           </div>
-          <h2>Pokedex web application</h2>
-          <p>
-            Pokedex is my very first project in JavaScript. It's a simple web application that fetches a Pokémon list and details from an API and then displays them on the web page. The app is built using the following technologies: 
-            <ul>
-            <li>JavaScript</li>
-            <li> jQuery Library</li>
-            <li>HTML</li>
-            <li> CSS</li>
-            <li> Bootstrap Framework</li></ul></p>
-            <div>
-              <button onclick="window.location.href='https://github.com/alionaterguta/rookie-app.git'">
-                View Code
-              </button>
-            </div>                
         </div>
 
+        <div class="grid-item">
+          <!--container 5-->
+
+          <div class="img-container">
+            <div class="project-img">
+              <a href="img/pokedex-img1.png" target="_blank">
+                <img src="img/pokedex-img1.png" width="360" height="auto"
+              /></a>
+            </div>
+          </div>
+          <h2>Pokedex Web Application</h2>
+          <p class="project-timeframe">
+            <i class="fas fa-calendar-day"></i> Jan. - Feb. 2024
+          </p>
+          <p>
+            Pokedex is my very first project in JavaScript. It's a simple web
+            application that fetches a Pokémon list and details from an API and
+            then displays them on the web page.
+          </p>
+          <p>
+            The app is built using the following technologies: JavaScript,
+            jQuery Library, HTML, CSS and Bootstrap Framework.
+          </p>
+          <div class="project-button--container">
+            <a
+              class="button-projects"
+              href="https://github.com/alionaterguta/rookie-app.git"
+              target="_blank"
+            >
+              View Code <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <div class="about_content contact">
-       
-          <div>
-            <div class="my_contact_info">
-              <p class="project_text">
-                I'm open to exciting projects and partnerships!
-              </p>
-            </div>
+      <h2 class="section-name">Contact</h2>
+      <div class="about-content contact">
+        <div>
+          <div class="my-contact--info">
+            <p class="project-text">
+              I'm open to exciting projects and partnerships!
+            </p>
           </div>
-          <div >
-            <form
-              method="post"
-              action="https://formsubmit.co/aliona.terguta@yahoo.com"
-              id="contact-form"
+        </div>
+        <div>
+          <form
+            method="post"
+            action="https://formspree.io/f/mqkrvgnw"
+            id="contact-form"
+          >
+            <label for="contact-email" class="standart-label"> Email </label
+            ><br />
+            <input
+              type="email"
+              name="Email"
+              id="contact-email"
+              required
+            /><br />
+            <label for="contact-message" class="standart-label"> Message</label
+            ><br />
+            <textarea
+              name="Message"
+              id="contact-message"
+              cols="50"
+              rows="5"
+              maxlength="240"
+              required
             >
-              <label for="contact-email" class="standart-label"> Email </label
-              ><br />
-              <input type="email" name="Email" id="contact-email" required /><br />
-              <label for="contact-message" class="standart-label"> Message</label
-              ><br />
-              <textarea
-                name="Message"
-                id="contact-message"
-                cols="50"
-                rows="5"
-                maxlength="240"                
-                required
-              >
-              </textarea
-              ><br />
-              <input type="submit" value="Send Message" class="submit"  />
-            </form>
-          </div>
-             
+            </textarea
+            ><br />
+            <input type="submit" value="Send Message" class="submit" />
+          </form>
+        </div>
       </div>
     </section>
     <footer>
@@ -399,17 +460,21 @@
           <img src="./img/github-hub-icon.svg" width="30px" alt="GitHub Icon" />
         </a>
         <a href="https://www.linkedin.com/in/aterguta/" target="_blank">
-          <img src="./img/linkedin-icon-2.svg" width="30px" alt="LinkedIn Icon" />
+          <img
+            src="./img/linkedin-icon-2.svg"
+            width="30px"
+            alt="LinkedIn Icon"
+          />
         </a>
       </div>
- <div>
-      <p class="footer_text">&copy; 2024 Aliona Terguta. All rights reserved.</p>
-     <button class="icon-button" id="scrollToTopBtn">
-        <svg class="up-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 19V6M5 12l7-7 7 7"/>
-        </svg>
-      </button> 
-    </div>
+      <div>
+        <p class="footer-text">
+          &copy; 2024 Aliona Terguta. All rights reserved.
+        </p>
+        <button class="fab-button" id="scrollToTopBtn">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
     </footer>
     <script src="js/scripts.js"></script>
   </body>
