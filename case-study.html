@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cine-Verse Case Study</title>
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-64x64.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/case-study.production.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="#hero">Case Study for Cine-Verse</a></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="img-container">
+        <img src="img/pc-screen.png" alt="Screenshot of the movie page" />
+      </div>
+      <div class="text">
+        <h2 class="project-name">A Movie Web Application</h2>
+        <p class="overview">
+          Cine-Verse is a dynamic single page application designed for movie
+          enthusiasts, providing a comprehensive platform to explore information
+          about different movies, directors, and genres.
+        </p>
+        <p class="overview">
+          Built with React, JavaScript, Node.js, Express.js, MongoDB, Bootstrap,
+          Postman
+        </p>
+        <div class="text-icon">
+          <div>
+            <button><i class="fas fa-fingerprint"></i> Role</button>
+            <p>Sole developer</p>
+          </div>
+          <div>
+            <button><i class="fas fa-calendar-day"></i> Timeframe</button>
+            <p>Backend - 27 Days</p>
+            <p>Frontend - 26 Days</p>
+          </div>
+          <div>
+            <button><i class="fas fa-users"></i> Supervisors</button>
+            <p>Andrew Gad</p>
+            <p>Lucien Chemaly</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="steps-container">
+      <div class="project-steps">
+        <i class="fas fa-cloud-download-alt"></i>
+        <h3>Backend</h3>
+        <p>
+          I built a REST API for this project using Node.js, Express, and
+          Mongoose for the data model, and then deployed it on Heroku.
+        </p>
+        <p>
+          CRUD (Create, Read, Update, Delete) operations are used to manage data
+          in the non-relational database, which I created and hosted on MongoDB
+          Atlas.
+        </p>
+        <p>
+          Check the
+          <a href="https://github.com/alionaterguta/cine-verse"
+            >REST API Code</a
+          >
+          on GitHub.
+        </p>
+      </div>
+
+      <div class="project-steps">
+        <i class="fas fa-sitemap"></i>
+        <h3>Frontend: Planning</h3>
+        <p>
+          After testing the REST API endpoints and ensuring each functioned
+          properly, I began planning the key features of the app.
+        </p>
+        <p>I started by determining the app views:</p>
+
+        <p>
+          <strong>Login and Sign-up View:</strong> Allows users to create
+          accounts and authenticate themselves.
+        </p>
+        <p>
+          <strong>Main View:</strong> Displays all movies to the user, each with
+          an image, title, and description. Clicking on a movie item accesses
+          the Single Movie view, which shows detailed information about the
+          movie and renders a list of movies with similar genres.
+        </p>
+        <p>
+          <strong>Profile View:</strong> Enables users to view and manage their
+          profile data, update and delete their account, and save favorite
+          movies.
+        </p>
+
+        <p>
+          Through a navigation bar, users can effortlessly navigate between
+          views.
+        </p>
+      </div>
+      <div class="project-steps">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Development</h3>
+        <p></p>
+        <p>
+          I started by building the app components for the UI, such as
+          MovieCard, FavoriteMovies, ProfileView, and UpdateUser.
+        </p>
+        <p>
+          I integrated the API using Axios to fetch movie data from the
+          database.
+        </p>
+        <p>
+          I used state routing for navigation between different pages/views and
+          managed state within the components using React hooks, useState, and
+          useEffect.
+        </p>
+        <p>
+          After main views were created, I started to implement some key
+          features, such as the option to filter movies by genre, movie title,
+          or director's name. Another key feature was giving users the ability
+          to add movies to a favorites list, which is rendered on the profile
+          page.
+        </p>
+      </div>
+      <div class="project-steps">
+        <i class="fas fa-pen-to-square"></i>
+        <h3>Final Touches</h3>
+        <p>
+          The main purpose of creating the app was to get acquainted with React
+          and to build a full MERN stack application. While the focus was less
+          on design, using the React Bootstrap library and CSS for styling and
+          responsiveness allowed me to complete the layout of all pages and
+          components within the limited timeframe.
+        </p>
+        <p>
+          To debug the application I constantly used the browser developer tools
+          and console statements.
+        </p>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="text">
+        <h2>Responsive design</h2>
+        <p>
+          In developing Cine-verse, I prioritized user experience and
+          functionality. Choosing React and React-Bootstrap allowed for the
+          creation of interactive and responsive interfaces, ensuring a seamless
+          experience across devices.
+        </p>
+        <h2>Areas for Future Improvement</h2>
+        <p>
+          Looking ahead, there are several enhancements that could be made to
+          enrich the user experience:
+        </p>
+
+        <p>
+          • Adding features like information about movie directors, sharing
+          movies and creating a "To Watch" list would further engage users and
+          improve accessibility.
+        </p>
+        <p>• Implementing dark mode functionality.</p>
+        <p>
+          • Additionally, refining styling elements, such as replacing the
+          favorite button with an intuitive icon, would enhance the app's visual
+          appeal and usability.
+        </p>
+      </div>
+      <div class="img-tablet">
+        <img
+          src="img/tablet-screen.png"
+          alt="Screen shots of the app on mobile screen"
+        />
+      </div>
+    </div>
+    <div class="steps-container footer">
+      <div class="project-steps">
+        <i class="fas fa-rainbow"></i>
+        <h3>Things that I enjoyed</h3>
+        <p>
+          Overall, developing the Cine-verse app was a great experience. It was
+          fulfilling to see a project grow from zero to a fully functional and
+          responsive application. I discovered the power of React and how easy
+          it is to apply a design library like Bootstrap.
+        </p>
+      </div>
+      <div class="project-steps">
+        <i class="fas fa-cloud-sun-rain"></i>
+        <h3>Things that Gave a Headache</h3>
+        <p>
+          One important lesson I learned while developing the frontend is that
+          knowing the structure of the database is crucial. Any mistakes in
+          building the endpoints can lead to significant issues. Many times
+          while debugging the app, I ended up making changes to the API code.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="social-media">
+        <a href="https://github.com/alionaterguta" target="_blank">
+          <img src="./img/github-hub-icon.svg" width="30px" alt="GitHub Icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/aterguta/" target="_blank">
+          <img
+            src="./img/linkedin-icon-2.svg"
+            width="30px"
+            alt="LinkedIn Icon"
+          />
+        </a>
+      </div>
+      <div>
+        <p class="footer-text">
+          &copy; 2024 Aliona Terguta. All rights reserved.
+        </p>
+        <!-- <button class="icon-button" id="scrollToTopBtn">
+          <svg
+            class="up-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 19V6M5 12l7-7 7 7" />
+          </svg>
+        </button> -->
+      </div>
+    </footer>
+  </body>
+</html>
