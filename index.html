@@ -14,94 +14,127 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/index.production.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
     <header>
-      <div class="logo"><a href="#hero">Aliona Terguta</a></div>
+      <div class="logo">
+        <a href="#hero"><span>Aliona</span>Terguta</a>
+      </div>
       <nav>
         <ul class="nav-links">
-          <li><a href="#about">ABOUT ME</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <div class="nav-line"></div>
         <div class="hamburger">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
         </div>
+
+        <div>
+          <div class="social-media">
+            <a href="https://github.com/alionaterguta" target="_blank">
+              <img
+                src="./img/github-hub-icon-nav.svg"
+                width="24px"
+                alt="GitHub Icon"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/aterguta/" target="_blank">
+              <img
+                src="./img/linkedin-icon-nav.svg"
+                width="24px"
+                alt="LinkedIn Icon"
+              />
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <section id="hero" class="hero">
-      <div class="intro">
-        <h1>Front-end Developer and an enthusiast UI Designer</h1>
-        <div>
-          <button class="intro-button button">
-            <a href="#projects">Projects </a>
-          </button>
-        </div>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-line"></div>
+        <h1 class="hero-title">A web development Journey</h1>
+        <p class="hero-paragraph">
+          I'am Aliona a web developer from Frankfurt, Germany. I enjoy creating
+          digital products that are both practical and visually pleasing. Always
+          ready for a challange
+        </p>
+      </div>
+      <div>
+        <img
+          src="img/Terguta_Aliona.jpg"
+          alt="Hero Image"
+          width="400px"
+          class="hero-image"
+        />
       </div>
     </section>
 
     <section id="about">
-      <h2 class="section-name" id="about-heading">About Me</h2>
-      <div class="portrait_container">
-        <img
-          src="img/aliona-terguta-portrait-350px.png"
-          alt="Portrait Aliona Terguta"
-        />
-      </div>
-      <p class="project-text">A Web Development Journey</p>
+      <div class="hero-line"></div>
+      <h2 class="section-title">About me</h2>
       <div class="about-text">
-        <p>
-          Hey! I am Aliona and I enjoy creating digital products that are both
-          practical and visually pleasing.
-        </p>
-        <p>
-          Back in 2020, I decided to try customizing a WordPress theme for the
-          website of the NGO I am volunteering at. It was a challenge, despite
-          it not being my first attempt at customizing digital products.
-          Mistakes were made, of course, but working on the website sparked an
-          interest to know more.
-        </p>
-        <p>
-          Since developing this passion, I found myself easing into this new
-          path. I started by delving deeper into User Experience and Interface
-          Design and eventually completed an intensive Full Stack Web
-          Development program. I have worked on several projects using various
-          technologies and tools, starting with HTML, CSS, and JavaScript, and
-          progressing to developing web apps in React and Angular. Check below
-          my education and experiences in this field thus far.
-        </p>
+        <div>
+          <p>
+            Back in 2020, I decided to try customizing a WordPress theme for the
+            website of the NGO I am volunteering at. It was a challenge, despite
+            it not being my first attempt at customizing digital products.
+            Mistakes were made, of course, but working on the website sparked an
+            interest to know more.
+          </p>
+          <p>
+            Since developing this passion, I found myself easing into this new
+            path. I started by delving deeper into User Experience and Interface
+            Design and eventually completed an intensive Full Stack Web
+            Development program.
+          </p>
+        </div>
+        <div>
+          <p>
+            I have worked on several projects using various technologies and
+            tools, starting with HTML, CSS, and JavaScript, and progressing to
+            developing web apps in React and Angular.
+          </p>
+          <p>
+            Currently, I am mostly focusing on improving my portfolio website.
+            Additionally, I am developing a web app with React to consolidate my
+            knowledge, and I am continuing to work on the WordPress website for
+            Perspektiven für Kinder im Gallus, where I volunteer.
+          </p>
+        </div>
+      </div>
+      <div>
         <button class="cv-button intro-button">
           <a href="docs/Aliona_Terguta_Resume.pdf" target="_blank"
             >Check my Resume <i class="fas fa-arrow-up-right-from-square"></i
           ></a>
         </button>
-        <p>
-          Currently, I am mostly focusing on improving my portfolio website.
-          Additionally, I am developing a web app with React to consolidate my
-          knowledge, and I am continuing to work on the WordPress website for
-          Perspektiven für Kinder im Gallus, where I volunteer.
-        </p>
       </div>
 
+      <div class="hero-line"></div>
+      <h2 class="section-title">Education and experiences</h2>
       <div class="about-content second">
         <div class="about-child1">
           <!-- Container 1-->
           <p class="course-name">
-            Full-Stack Web Development Program:
-            <span>Full-Stack Immersion</span>
+            Full-Stack Web Development Program: Full-Stack Immersion
           </p>
           <p class="school-name">CareerFoundry</p>
           <p class="years">Dec. 2023 - May 2024</p>
@@ -134,8 +167,7 @@
         <div class="about-child1">
           <!-- Container 1-->
           <p class="course-name">
-            Full-Stack Web Development Program:
-            <span>Intro to Frontend Development</span>
+            Full-Stack Web Development Program: Intro to Frontend Development
           </p>
           <p class="school-name">CareerFoundry</p>
           <p class="years">Nov. 2023 - Dec. 2023</p>
@@ -157,7 +189,7 @@
         <div class="about-child1">
           <!-- Container 3-->
           <p class="course-name">
-            Mia san Online Program: <span>UX/UI Designer</span>
+            Mia san Online Program: UX/UI Designer
             <a
               class="pdf-link"
               href="docs/Certificate_of_Participation_MiaSanOnline.pdf"
@@ -211,8 +243,9 @@
     </section>
 
     <section id="projects">
-      <h2 class="section-name">Projects</h2>
-      <p class="project-text">Explore some of the projects I have built</p>
+      <div class="hero-line"></div>
+      <h2 class="section-title">Recent Projects</h2>
+      <p class="hero-paragraph">Explore some of the projects I have built</p>
       <div class="grid">
         <div class="grid-item">
           <!--container 2-->
@@ -223,12 +256,12 @@
               /></a>
             </div>
           </div>
-          <h2>
+          <h3>
             <a href="case-study.html"
               >Cine-Verse App with React - Case Study
               <i class="fas fa-arrow-up-right-from-square"></i
             ></a>
-          </h2>
+          </h3>
           <p class="project-timeframe">
             <i class="fas fa-calendar-day"></i> Feb. - Mar. 2024
           </p>
@@ -265,7 +298,7 @@
               /></a>
             </div>
           </div>
-          <h2>Meet App: A Progressive Web Application (PWA)</h2>
+          <h3>Meet App: A Progressive Web Application (PWA)</h3>
           <p class="project-timeframe">
             <i class="fas fa-calendar-day"></i> Mar. - Apr. 2024
           </p>
@@ -311,7 +344,7 @@
               /></a>
             </div>
           </div>
-          <h2>Chat App: A React Native Application</h2>
+          <h3>Chat App: A React Native Application</h3>
           <p class="project-timeframe">
             <i class="fas fa-calendar-day"></i> Apr. 2024
           </p>
@@ -346,7 +379,7 @@
               /></a>
             </div>
           </div>
-          <h2>CineVerse App with Angular</h2>
+          <h3>CineVerse App with Angular</h3>
           <p class="project-timeframe">
             <i class="fas fa-calendar-day"></i> Apr. - May. 2024
           </p>
@@ -387,7 +420,7 @@
               /></a>
             </div>
           </div>
-          <h2>Pokedex Web Application</h2>
+          <h3>Pokedex Web Application</h3>
           <p class="project-timeframe">
             <i class="fas fa-calendar-day"></i> Jan. - Feb. 2024
           </p>
@@ -414,14 +447,14 @@
     </section>
 
     <section id="contact">
-      <h2 class="section-name">Contact</h2>
+      <div class="hero-line"></div>
+      <h2 class="section-title">Contact me</h2>
+      <p class="hero-paragraph">
+        I'm open to exciting projects and partnerships!
+      </p>
       <div class="about-content contact">
         <div>
-          <div class="my-contact--info">
-            <p class="project-text">
-              I'm open to exciting projects and partnerships!
-            </p>
-          </div>
+          <div class="my-contact--info"></div>
         </div>
         <div>
           <form
@@ -429,7 +462,8 @@
             action="https://formspree.io/f/mqkrvgnw"
             id="contact-form"
           >
-            <label for="contact-email" class="standart-label"> Email </label
+            <label for="contact-email" class="standart-label">
+              Your Email </label
             ><br />
             <input
               type="email"
@@ -437,7 +471,8 @@
               id="contact-email"
               required
             /><br />
-            <label for="contact-message" class="standart-label"> Message</label
+            <label for="contact-message" class="standart-label"
+              >Your Message</label
             ><br />
             <textarea
               name="Message"
@@ -457,15 +492,13 @@
     <footer>
       <div class="social-media">
         <a href="https://github.com/alionaterguta" target="_blank">
-          <img src="./img/github-hub-icon.svg" width="30px" alt="GitHub Icon" />
+          <img src="./img/github-hub-icon.svg" width="24px" alt="GitHub Icon" />
         </a>
+        GitHub
         <a href="https://www.linkedin.com/in/aterguta/" target="_blank">
-          <img
-            src="./img/linkedin-icon-2.svg"
-            width="30px"
-            alt="LinkedIn Icon"
-          />
+          <img src="./img/linkedin-icon.svg" width="24px" alt="LinkedIn Icon" />
         </a>
+        Linkedin
       </div>
       <div>
         <p class="footer-text">
