@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Get the button
   var mybutton = document.getElementById("scrollToTopBtn");
 
-  // When the user scrolls down 100px from the top of the document, show the button
+  // When the user scrolls down 500px from the top of the document, show the button
   window.onscroll = function () {
     if (
       document.body.scrollTop > 500 ||

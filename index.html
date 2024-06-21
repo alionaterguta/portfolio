@@ -38,14 +38,12 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-
-        <div class="nav-line"></div>
         <div class="hamburger">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
         </div>
-
+        <div class="nav-line"></div>
         <div>
           <div class="social-media">
             <a href="https://github.com/alionaterguta" target="_blank">
@@ -67,29 +65,40 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-line"></div>
-        <h1 class="hero-title">A web development Journey</h1>
-        <p class="hero-paragraph">
-          I'am Aliona a web developer from Frankfurt, Germany. I enjoy creating
-          digital products that are both practical and visually pleasing. Always
-          ready for a challange
-        </p>
-      </div>
-      <div>
-        <img
-          src="img/Terguta_Aliona.jpg"
-          alt="Hero Image"
-          width="400px"
-          class="hero-image"
-        />
+    <section id="hero">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-line"></div>
+          <h1 class="hero-title">
+            Web Developer and an enthusiast UI Designer
+          </h1>
+          <p class="hero-paragraph">
+            I'm Aliona, a web developer based in Frankfurt, Germany. I
+            specialize in creating digital products that are both functional and
+            visually appealing. Always ready to take on new challenges.
+          </p>
+          <div>
+            <button class="button-hero">
+              <a href="#projects" target="_blank"
+                >Projects <i class="fas fa-arrow-down"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+        <div class="hero-img--container">
+          <img
+            src="img/Terguta_Aliona.jpg"
+            alt="Hero Image"
+            class="hero-image"
+          />
+        </div>
       </div>
     </section>
 
     <section id="about">
       <div class="hero-line"></div>
       <h2 class="section-title">About me</h2>
+      <p class="hero-paragraph">A web development journey</p>
       <div class="about-text">
         <div>
           <p>
@@ -109,8 +118,9 @@
         <div>
           <p>
             I have worked on several projects using various technologies and
-            tools, starting with HTML, CSS, and JavaScript, and progressing to
-            developing web apps in React and Angular.
+            tools. I began with my portfolio, where I mastered HTML and CSS,
+            then moved on to more complex projects involving JavaScript. I have
+            since progressed to developing web apps using React and Angular.
           </p>
           <p>
             Currently, I am mostly focusing on improving my portfolio website.
@@ -121,7 +131,7 @@
         </div>
       </div>
       <div>
-        <button class="cv-button intro-button">
+        <button class="cv-button">
           <a href="docs/Aliona_Terguta_Resume.pdf" target="_blank"
             >Check my Resume <i class="fas fa-arrow-up-right-from-square"></i
           ></a>
@@ -258,9 +268,8 @@
           </div>
           <h3>
             <a href="case-study.html"
-              >Cine-Verse App with React - Case Study
-              <i class="fas fa-arrow-up-right-from-square"></i
-            ></a>
+              >Cine-Verse App with React - <span>Case Study</span></a
+            >
           </h3>
           <p class="project-timeframe">
             <i class="fas fa-calendar-day"></i> Feb. - Mar. 2024
