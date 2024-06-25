@@ -128,6 +128,7 @@ ul {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  gap: 40px;
   row-gap: 40px;
 }
 .hero-content {
@@ -383,7 +384,7 @@ button i {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     grid-gap: 20px;
-    margin: 42px 0 40px;
+    margin: 42px 0 0;
   }
 
   .grid-item {
@@ -419,7 +420,6 @@ button i {
   .grid-item:hover {
     transform: scale(var(--scale));
   }
-
   .project-button--container {
     display: flex;
     gap: 10px;
@@ -569,12 +569,6 @@ footer .social-media {
   .hero-image {
     margin: 0;
   }
-  .project-button--container {
-    flex-direction: column;
-  }
-  .button-projects {
-    width: 100%;
-  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -605,11 +599,22 @@ footer .social-media {
   .hamburger {
     display: flex;
   }
-  /* p {
+  p,
+  .button-projects {
     font-size: 16px;
-  } */
+  }
+
+  .hero-paragraph {
+    font-size: 20px;
+  }
+
   .hero {
-    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .hero-content {
+    padding: 0;
   }
   .hero-img--container {
     flex: 1;
@@ -617,6 +622,7 @@ footer .social-media {
     align-items: center;
     justify-content: center;
   }
+
   .hero-image {
     margin: 0;
   }
@@ -650,14 +656,12 @@ footer .social-media {
   .project-button--container {
     flex-direction: column;
   }
-  /* .button-projects {
-    width: 100%;
-  } */
+
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-content: center;
-    grid-gap: 15px;
-    margin: 40px auto;
+    grid-gap: 20px;
+    margin: 40px auto 0;
   }
   .grid-item {
     position: relative;
@@ -671,7 +675,7 @@ footer .social-media {
   }
   .fab-button {
     position: fixed;
-    right: 30px;
+    right: 90px;
     bottom: 40px;
   }
   footer {
@@ -713,16 +717,19 @@ footer .social-media {
     font-size: 16px;
   }
   .hero {
+    display: flex;
+    align-items: flex-start;
     flex-direction: column;
+  }
+  .hero-content {
+    padding: 0;
   }
   .hero-img--container {
     flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .hero-image {
-    max-width: 280px;
+    width: 100%;
     margin: 0;
   }
   .hero-title {
@@ -735,10 +742,6 @@ footer .social-media {
     width: 100%;
     height: auto;
   }
-  h1 {
-    font-size: 48px;
-  }
-
   .about-text {
     width: auto;
   }
@@ -751,12 +754,6 @@ footer .social-media {
   .cv-button {
     font-size: 16px;
   }
-  /* .project-button--container {
-    flex-direction: column;
-  }
-  .button-projects {
-    width: 100%;
-  } */
   p.course-name {
     font-size: 16px;
     margin: 8px 0;
@@ -801,7 +798,7 @@ footer .social-media {
   }
   .fab-button {
     position: fixed;
-    right: 50px;
+    right: 30px;
     bottom: 40px;
   }
 }
