@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Get the button
   var mybutton = document.getElementById("scrollToTopBtn");
 
-  // When the user scrolls down 100px from the top of the document, show the button
+  // When the user scrolls down 500px from the top of the document, show the button
   window.onscroll = function () {
     if (
       document.body.scrollTop > 500 ||
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let pdfButton = document.getElementsByClassName(".pdf-link");
   openPDFs = () => {
-    window.open("docs/Certificate_of_Achievement-AlionaTerguta.pdf", "1");
-    window.open("docs/Certificate_of_Participation-AlionaTerguta.pdf", "2");
+    window.open("docs/Certificate_of_Achievement_Aliona_Terguta.pdf", "1");
+    window.open("docs/Certificate_of_Participation_Aliona_Terguta.pdf", "2");
   };
 });
