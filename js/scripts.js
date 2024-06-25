@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let pdfButton = document.getElementsByClassName(".pdf-link");
   openPDFs = () => {
-    window.open("docs/Certificate_of_Achievement-AlionaTerguta.pdf", "1");
-    window.open("docs/Certificate_of_Participation-AlionaTerguta.pdf", "2");
+    window.open("docs/Certificate_of_Achievement_Aliona_Terguta.pdf", "1");
+    window.open("docs/Certificate_of_Participation_Aliona_Terguta.pdf", "2");
   };
 });
